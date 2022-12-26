@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="assets/css/my-project.css">
+</head>
+<header class="header">
+    <!-- Navigasi bar-->
+    <nav>
+    <div class="item-left">
+    <ul>
+        <li class="imglogo">
+        <img src="assets/images/brandred.png" alt="Branded.png">
+    </li>
+        <li>
+            <a class="active" href="index.html">Home</a>
+        </li>
+        <li>
+            <a class="active" href="my-project.html">My Project</a>
+        </li>
+    </ul>
+</div>
+
+  <div class="item-right">
+    <a href="contact-form.html">Contact Me</a>
+  </div>
+
+ </nav>
+</header>
+<body>
+    <form onsubmit="getData(event)">
+        <h1 class="h1">ADD MY PROJECT</h1>
+        <!------- ini adalah input -------->
+        <div class="project-name">
+        <label for="">Project Name</label>
+        <input type="text" id="name">
+    </div>
+    <div class="datamasuk">
+        <div class="data-masuk">
+         <label for="">Star Date</label>
+         <input type="date" id="start-date">
+        </div>
+
+       <div class="data-masuk">
+        <label for="">End Date</label>
+        <input type="date" id="end-date">
+       </div>
+    </div>
+    <div class="deskripsi">
+        <label for="deskripsi">Description</label>
+        <textarea id="message"></textarea>
+    </div>
+    
+        <div class="checkbox">
+            <label for="checkbox">Technologies</label>
+            <div class="container-pilihan">
+                <div class="kartu-pilihan">
+                    <input type="checkbox" id="nodeJs">
+                    <label for="" class="nama-kartu-pilihan">NodeJs</label>
+                </div>
+                <div class="kartu-pilihan">
+                    <input type="checkbox" id="javascript">
+                    <label for="" class="nama-kartu-pilihan">JavaScript</label>
+                </div>
+                <div class="kartu-pilihan">
+                    <input type="checkbox" id="reactJs">
+                    <label for="" class="nama-kartu-pilihan">ReactJs</label>
+                </div>
+                <div class="kartu-pilihan">
+                    <input type="checkbox" id="typeScript">
+                    <label for="" class="nama-kartu-pilihan">TypeScript</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="upload">
+            <label for="upload">Upload Image</label>
+            <input type="file" id="input-upload">
+        </div>
+
+    <div>
+        <button  class="button-profil" type="submit">Submit</button>
+    </div>
+    </form>
+
+    <div class="container-project">
+        <div>
+            <h1>MY PROJECT</h1>
+            <div class="project" id="card-box">
+
+            </div>
+        </div>
+        
+    </div>
+
+   <script src="assets/js/blog.js"></script>
+    
+</body>
+</html>
